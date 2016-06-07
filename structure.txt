@@ -1,0 +1,36 @@
+//#include <stdio.h>
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+struct complex
+{
+ int real , img;
+       };
+
+int main()
+{struct complex a,b,c ;
+    cout<< "Enter a and b value where a +ib is first complex number ";
+    cout<< ".\n" ;
+    cout << "a = ";
+    cin>> a.real ;
+    cout<< ".\n" ;
+    cout << "b = ";
+    cin>> a.img ;
+    cout<< ".\n" ;
+    cout<< "Enter c and d value where c +id is second complex number ";
+    cout<< ".\n" ;
+    cout << "c = ";
+    cin>> b.real ;
+    cout<< ".\n" ;
+    cout << "d = ";
+    cin>> b.img ;
+    cout<< ".\n" ;
+    c.real = a.real + b.real;
+    c.img  = a.img + b.img ;
+    cout << "sum of complex number is " << c.real<<" +"<< c.img<<"i";
+    cout<< ".\n" ;
+    system ("PAUSE");
+    return 0;
+    
+}
